@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置pojo类别名 -->
+	<typeAliases>
+		<package name="cn.e3mall.pojo" />
+	</typeAliases>
+
+	<!-- 第三方插件 -->
+	<plugins>
+		<!-- 分页插件 -->
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<property name="dialect" value="mysql" />
+		</plugin>
+	</plugins>
+
+</configuration>
